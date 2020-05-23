@@ -9,6 +9,8 @@ your target price for the product has been reached.
 ## Requirements
 - Dedicated computer to run script (raspberry pi works perfectly fine)
 - A Twilio Account (Free)
+- Python 3 and Python libraries including **sys, json, requests, bs4, twilio,
+& price_parser**
 
 ## Usage
 1. Put script on computer that will be acting as a server
@@ -16,6 +18,7 @@ your target price for the product has been reached.
 3. Run `./check_price.py add` and follow prompts
 4. Schedule `./check_price.py run` with Cron to periodically check for the price
 5. Add products as needed and change scheduling
+6. run `./check_price.py force-text` to test out and get a text message
 
 ## Limitations
 - Websites that have a single product with multiple variations can cause issues.
