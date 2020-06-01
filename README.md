@@ -20,6 +20,18 @@ your target price for the product has been reached.
 5. Add products as needed and change scheduling
 6. run `./check_price.py force-text` to test out and get a text message
 
+## Example
+1. Put in the twilio information
+![](demo/twilio_info.gif)
+
+2. Add product you want to get price of
+![](demo/add_product.gif)
+This product doesn't specify the currency and price in separate html tags so leave the second answers blank
+
+3. Test out the script and get a text notification of price
+![](demo/test.gif)
+Once you've verified this works you can use Cron and schedule periodic price checks
+
 ## Limitations
 - Websites that have a single product with multiple variations can cause issues.
 - Initial Price Check may have wrong previous price
